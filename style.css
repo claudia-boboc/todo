@@ -32,6 +32,7 @@ form .addButton {
   border-radius: 2px;
   height: 5vh;
   width: 5vh;
+  background-color: #f1eded;
 }
 
 .fa-plus-square:before {
@@ -40,4 +41,28 @@ form .addButton {
 }
 .addButton:hover {
   background-color: grey;
+}
+
+.select {
+  /* margin: 5px; */
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+}
+
+.selectOption {
+  height: 5vh;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin: 4px;
+  color: #eca762;
+}
+
+select.selectOption {
+  background-image: linear-gradient(90deg, transparent 75%, #f1eded 25%);
+}
+
+select.selectOption:hover {
+  background-image: linear-gradient(90deg, transparent 75%, grey 25%);
 }
