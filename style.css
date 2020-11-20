@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcc99;
+  color: white;
+  min-height: 100vh;
+}
+
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  min-height: 20vh;
+}
+
+form input {
+  width: 15%;
+  height: 5vh;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+form .addButton {
+  border: none;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+}
+
+.fa-plus-square:before {
+  font-size: 30px;
+  color: #eca762;
+}
+.addButton:hover {
+  background-color: grey;
+}
