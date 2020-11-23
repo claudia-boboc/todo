@@ -27,19 +27,28 @@ form input {
   font-size: 20px;
 }
 
-form .addButton {
+form .addButton,
+.completed-button,
+.delete-btn {
   border: none;
   border-radius: 2px;
   height: 5vh;
   width: 5vh;
   background-color: #f1eded;
+  outline: none;
 }
 
+.completed-button,
+.delete-btn {
+  margin: 1px;
+}
 .fa-plus-square:before {
   font-size: 30px;
   color: #eca762;
 }
-.addButton:hover {
+.addButton:hover,
+.completed-button:hover,
+.delete-btn:hover {
   background-color: grey;
 }
 
@@ -51,6 +60,7 @@ form .addButton {
 }
 
 .selectOption {
+  width: 18vh;
   height: 5vh;
   border: none;
   outline: none;
@@ -65,4 +75,33 @@ select.selectOption {
 
 select.selectOption:hover {
   background-image: linear-gradient(90deg, transparent 75%, grey 25%);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  width: 20%;
+}
+.todo {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin: 3px;
+  background: white;
+  color: black;
+}
+.completed-button {
+  margin-left: auto;
+}
+
+.fa-check:before,
+.fa-trash:before {
+  color: #eca762;
 }
