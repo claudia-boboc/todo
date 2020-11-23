@@ -20,7 +20,7 @@ form {
 }
 
 form input {
-  width: 15%;
+  width: 23vh;
   height: 5vh;
   border: none;
   outline: none;
@@ -43,7 +43,7 @@ form .addButton,
   margin: 1px;
 }
 .fa-plus-square:before {
-  font-size: 30px;
+  font-size: 4vh;
   color: #eca762;
 }
 .addButton:hover,
@@ -52,13 +52,25 @@ form .addButton,
   background-color: grey;
 }
 
+select {
+  appearance: none;
+}
 .select {
   /* margin: 5px; */
+  position: relative;
   padding: 0;
   margin-top: 0;
   display: flex;
 }
 
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  color: #eca762;
+  font-size: 20px;
+  right: 0;
+  padding: 10px;
+}
 .selectOption {
   width: 18vh;
   height: 5vh;
@@ -104,4 +116,14 @@ select.selectOption:hover {
 .fa-check:before,
 .fa-trash:before {
   color: #eca762;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
