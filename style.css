@@ -70,7 +70,9 @@ select {
   font-size: 20px;
   right: 0;
   padding: 10px;
+  pointer-events: none;
 }
+
 .selectOption {
   width: 18vh;
   height: 5vh;
@@ -99,6 +101,7 @@ select.selectOption:hover {
   list-style: none;
   width: 20%;
 }
+
 .todo {
   height: 40px;
   display: flex;
@@ -108,7 +111,9 @@ select.selectOption:hover {
   margin: 3px;
   background: white;
   color: black;
+  padding-left: 3px;
 }
+
 .completed-button {
   margin-left: auto;
 }
